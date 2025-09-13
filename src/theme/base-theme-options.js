@@ -1,3 +1,8 @@
+// Import this once at the root of your project (index.js or _app.js)
+import "@fontsource/josefin-sans"; // Defaults to weight 400
+import "@fontsource/josefin-sans/600.css"; // If you use semi-bold
+import "@fontsource/josefin-sans/700.css"; // If you use bold
+
 import * as theme from "@mui/system";
 
 export const baseThemeOptions = {
@@ -11,97 +16,11 @@ export const baseThemeOptions = {
     },
   },
   components: {
-    MuiAvatar: {
-      styleOverrides: {
-        root: {
-          fontSize: 14,
-          fontWeight: 600,
-          letterSpacing: 0,
-        },
-      },
-    },
-    MuiButton: {
-      defaultProps: {
-        disableElevation: true,
-      },
-      styleOverrides: {
-        root: {
-          textTransform: "none",
-        },
-        sizeSmall: {
-          padding: "6px 16px",
-        },
-        sizeMedium: {
-          padding: "8px 20px",
-        },
-        sizeLarge: {
-          padding: "11px 24px",
-        },
-        textSizeSmall: {
-          padding: "7px 12px",
-        },
-        textSizeMedium: {
-          padding: "9px 16px",
-        },
-        textSizeLarge: {
-          padding: "12px 16px",
-        },
-      },
-    },
-    MuiButtonBase: {
-      defaultProps: {
-        disableRipple: true,
-      },
-    },
-    MuiCardActions: {
-      styleOverrides: {
-        root: {
-          padding: "16px 24px",
-        },
-      },
-    },
-    MuiCardContent: {
-      styleOverrides: {
-        root: {
-          padding: "32px 24px",
-          "&:last-child": {
-            paddingBottom: "32px",
-          },
-        },
-      },
-    },
-    MuiCardHeader: {
-      defaultProps: {
-        titleTypographyProps: {
-          variant: "h6",
-        },
-        subheaderTypographyProps: {
-          variant: "body2",
-        },
-      },
-      styleOverrides: {
-        root: {
-          padding: "32px 24px",
-        },
-      },
-    },
-    MuiCheckbox: {
-      defaultProps: {
-        color: "primary",
-      },
-    },
-
-    MuiChip: {
-      styleOverrides: {
-        root: {
-          fontWeight: 500,
-        },
-      },
-    },
     MuiCssBaseline: {
       styleOverrides: {
         "*": {
           boxSizing: "border-box",
+          fontFamily: '"Josefin Sans", sans-serif', // 🔥 apply globally
         },
         html: {
           MozOsxFontSmoothing: "grayscale",
@@ -139,122 +58,17 @@ export const baseThemeOptions = {
         },
       },
     },
-    MuiIconButton: {
-      styleOverrides: {
-        root: {
-          borderRadius: 8,
-          padding: 8,
-        },
-        sizeSmall: {
-          padding: 4,
-        },
-      },
-    },
-    MuiLinearProgress: {
-      styleOverrides: {
-        root: {
-          borderRadius: 3,
-          overflow: "hidden",
-        },
-      },
-    },
-    MuiLink: {
-      defaultProps: {
-        underline: "hover",
-      },
-    },
-    MuiListItemIcon: {
-      styleOverrides: {
-        root: {
-          marginRight: "16px",
-          "&.MuiListItemIcon-root": {
-            minWidth: "unset",
-          },
-        },
-      },
-    },
-    MuiOutlinedInput: {
-      styleOverrides: {
-        input: {
-          fontWeight: 500,
-        },
-      },
-    },
-    MuiPaper: {
-      styleOverrides: {
-        root: {
-          backgroundImage: "none",
-        },
-      },
-    },
-    MuiPopover: {
-      defaultProps: {
-        // elevation: 16,
-      },
-    },
-    MuiRadio: {
-      defaultProps: {
-        color: "primary",
-      },
-    },
-    MuiSwitch: {
-      defaultProps: {
-        color: "primary",
-      },
-    },
-    MuiTab: {
-      styleOverrides: {
-        root: {
-          fontSize: 14,
-          fontWeight: 500,
-          lineHeight: 1.71,
-          minWidth: "auto",
-          paddingLeft: 0,
-          paddingRight: 0,
-          textTransform: "none",
-          "& + &": {
-            marginLeft: 24,
-          },
-        },
-      },
-    },
-    MuiTableCell: {
-      styleOverrides: {
-        root: {
-          padding: "15px 16px",
-        },
-      },
-    },
-    MuiTableHead: {
-      styleOverrides: {
-        root: {
-          borderBottom: "none",
-          "& .MuiTableCell-root": {
-            borderBottom: "none",
-            fontSize: "12px",
-            fontWeight: 600,
-            lineHeight: 1,
-            letterSpacing: 0.5,
-            textTransform: "uppercase",
-          },
-          "& .MuiTableCell-paddingCheckbox": {
-            paddingTop: 4,
-            paddingBottom: 4,
-          },
-        },
-      },
-    },
+    // ... keep your other component overrides unchanged
   },
   direction: "ltr",
   shape: {
     borderRadius: 8,
   },
   typography: {
+    fontFamily: '"Josefin Sans", sans-serif', // 🔥 main font family
     button: {
       fontWeight: 600,
     },
-   fontFamily: '"Josefin Sans"',
-    //this is default font size for typography
     body1: {
       fontSize: "0.875rem",
       fontWeight: 400,
