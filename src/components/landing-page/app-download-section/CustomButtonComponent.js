@@ -21,6 +21,10 @@ const CustomButtonComponent = props => {
                 ref={customButtonRef}
                 variant="contained"
                 onClick={(e) => handleClick(e)}
+                sx={{
+    background: "linear-gradient(90deg, #5e9918 0%, #29CE00 100%)",
+    color: "#fff",
+  }}
             >
                 {title}
                 {open === true ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}

@@ -108,8 +108,8 @@ const footer = {
   inputButtonHover: "#67907e",
   bottom: "rgba(0, 98, 52, 0.3)",
   foodBottom: "#686B78",
-  appDownloadButtonBg: "#1A1A1A",
-  appDownloadButtonBgGray: "#3E594D",
+  appDownloadButtonBg: "#5e9918",
+  appDownloadButtonBgGray: "#5e9918",
   foodFooterBg: "#414141",
 };
 const customColor = {

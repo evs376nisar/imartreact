@@ -18,7 +18,7 @@ const neutral = {
 const background = {
 	default: "#F9FAFC",
 	paper: "#FFFFFF",
-	custom: "#f1f2f5",
+	custom: "#f1f5f0",
 	custom2: "#FFFFFF",
 	custom3: "#F6F7FB",
 	custom4: "#ffffff",
@@ -111,9 +111,9 @@ const footer = {
 	inputButtonHover: "#6dcfa6",
 	bottom: "rgba(0, 98, 52, 0.3)",
 	foodBottom: "#686B78",
-	appDownloadButtonBg: "#1A1A1A",
-	appDownloadButtonBgGray: "#3E594D",
-	appDownloadButtonBgHover: "#4f4f4f",
+	appDownloadButtonBg: "#5e9918",
+	appDownloadButtonBgGray: "#5e9918",
+	appDownloadButtonBgHover: "#5e9918",
 	foodFooterBg: "#414141",
 };
 const customColor = {
@@ -244,8 +244,17 @@ export const lightThemeOptions = {
         opacity: 0.5,
       },
     },
+    containedPrimary: {
+      backgroundColor: "#5e9918",     // solid green
+      backgroundImage: "none",        // remove gradient
+      "&:hover": {
+        backgroundColor: "#4a7512",   // darker shade on hover
+        backgroundImage: "none",      // remove hover gradient too
+      },
+    },
   },
 },
+
 
 
 	},
