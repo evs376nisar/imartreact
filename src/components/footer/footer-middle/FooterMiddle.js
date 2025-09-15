@@ -78,12 +78,12 @@ const FooterMiddle = (props) => {
               Number.parseInt(
                 landingPageData?.download_user_app_links?.apple_store_url_status
               ) === 1) && (
-              <AppLinks
-                configData={configData}
-                changeSingle
-                landingPageData={landingPageData}
-              />
-            )}
+                <AppLinks
+                  configData={configData}
+                  changeSingle
+                  landingPageData={landingPageData}
+                />
+              )}
           </CustomStackFullWidth>
         </Grid>
         <Grid item xs={12} sm={6} md={7.8}>
@@ -104,9 +104,11 @@ const FooterMiddle = (props) => {
               padding={{ xs: "20px 8px", sm: "40px" }}
               sx={{
                 backgroundColor:
-                  getCurrentModuleType() === ModuleTypes?.FOOD
-                    ? alpha(theme.palette.moduleTheme.food, 0.051)
-                    : alpha(theme.palette.primary.main, 0.051),
+                  // getCurrentModuleType() === ModuleTypes?.FOOD
+                  //   ? alpha(theme.palette.moduleTheme.food, 0.051)
+                  //   : alpha(theme.palette.primary.main, 0.051)
+                  "#5e9918",
+                color: "#fff",
                 borderRadius: "23px",
                 position: "relative",
               }}
@@ -202,9 +204,11 @@ const FooterMiddle = (props) => {
             sx={{
               width: "100%",
               backgroundColor:
-                getCurrentModuleType() === ModuleTypes?.FOOD
-                  ? alpha(theme.palette.moduleTheme.food, 0.05)
-                  : alpha(theme.palette.primary.main, 0.05),
+                // getCurrentModuleType() === ModuleTypes?.FOOD
+                //   ? alpha(theme.palette.moduleTheme.food, 0.05)
+                //   : alpha(theme.palette.primary.main, 0.05),
+                "#5e9918",
+              color: "#fff",
               borderRadius: "23px",
               padding: "30px",
             }}
