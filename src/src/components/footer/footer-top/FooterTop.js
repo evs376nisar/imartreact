@@ -72,6 +72,10 @@ const FooterTop = (props) => {
 									<Typography
 										fontWeight={700}
 										fontSize={{ xs: "1rem", md: "2.25rem" }}
+										sx={{
+											color: (theme) =>
+												alpha(theme.palette.neutral[100], 0.8),
+										}}
 										component="h2"
 									>
 										{landingPageData?.fixed_newsletter_title}
@@ -82,7 +86,7 @@ const FooterTop = (props) => {
 										fontWeight="400"
 										sx={{
 											color: (theme) =>
-												alpha(theme.palette.neutral[500], 0.8),
+												alpha(theme.palette.neutral[100], 0.8),
 										}}
 										component="p"
 									>

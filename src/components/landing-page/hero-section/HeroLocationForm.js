@@ -267,7 +267,8 @@ const HeroLocationForm = () => {
   return (
     <>
       <CustomStackFullWidth
-        backgroundColor={alpha(theme.palette.primary.main, 0.5)}
+        backgroundColor="#FE8D27"
+        // {alpha(theme.palette.primary.main, 0.5)}
         padding={{ xs: ".7rem", md: "1.2rem" }}
         borderRadius="5px"
       >

@@ -223,7 +223,7 @@ export const lightThemeOptions = {
 		MuiTableHead: {
 			styleOverrides: {
 				root: {
-					backgroundColor: neutral[700],
+					backgroundColor: neutral[100],
 					".MuiTableCell-root": {
 						color: neutral[700],
 					},

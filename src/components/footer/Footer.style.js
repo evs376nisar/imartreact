@@ -16,7 +16,7 @@ export const StyledFooterBackground = styled(Box)(
 );
 
 export const StyledFooterTop = styled(CustomStackFullWidth)(({ theme }) => ({
-	backgroundColor: "#5e9918",
+	backgroundColor: "#1C4606",
 	width: "100%",
 	[theme.breakpoints.down("md")]: {
 		paddingBottom: "20px",

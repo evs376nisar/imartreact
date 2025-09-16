@@ -174,6 +174,7 @@ export const SignInButton = styled(Button)(({ theme }) => ({
   color: theme.palette.neutral[100],
   backgroundColor: theme.palette.primary.main,
   borderRadius: "32px",
+  textTransform: "none",
 }));
 export const NavMenuLink = styled(MenuLink)(({ theme }) => ({
   color: theme.palette.neutral[1000],

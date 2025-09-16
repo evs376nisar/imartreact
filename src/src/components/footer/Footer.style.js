@@ -16,12 +16,9 @@ export const StyledFooterBackground = styled(Box)(
 );
 
 export const StyledFooterTop = styled(CustomStackFullWidth)(({ theme }) => ({
-	backgroundColor:
-		getCurrentModuleType() === ModuleTypes?.FOOD
-			? alpha(theme.palette.moduleTheme.food, 0.051)
-			: alpha(theme.palette.primary.main, 0.1),
+	backgroundColor: "#1C4606",
 	width: "100%",
 	[theme.breakpoints.down("md")]: {
-		paddingBottom:"20px"
+		paddingBottom: "20px",
 	},
-}));
+}));;
